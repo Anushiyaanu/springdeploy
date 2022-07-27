@@ -13,7 +13,7 @@ public class SpringprojdemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringprojdemoApplication.class, args);
 	}
-	@GetMapping("/demo")
+	@GetMapping("/")
 	public String demo(@RequestParam(value="name",defaultValue = "world!")String name) {
 		return String.format("Hello%s",name);
 	
